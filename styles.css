@@ -13,10 +13,11 @@ body {
 }
 
 h1 {
+    color: #007EA7;
     font-size: 3em;
 }
 
-h1 , h2 {
+h2 {
     color: #003459;
 }
 
@@ -47,7 +48,7 @@ a {
 }
 
 .mobile-only {
-    display: block;
+    display: inline;
 }
 
 @media (min-width: 1000px) {
@@ -149,7 +150,7 @@ nav .logo {
     display: block;
     font-size: 24px;
     text-align: right;
-    padding: 16px;
+    padding: 16px 16px 16px 0;
     align-self: center;
 }
 
@@ -185,8 +186,34 @@ img.hero {
     max-width: 1280px
 }
 
-.res--container {
+.container {
     padding: 0 0 0 12px;
+}
+
+.des {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 16px;
+    align-items: center;
+    justify-content: center;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.des.expanded {
+    max-height:100%;
+}
+
+.des img {
+    max-width: 100%;
+}
+
+@media (min-width: 600px) {
+    .des {
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 5%;
+
+    }
 }
 
 
@@ -235,6 +262,7 @@ img.hero {
     nav .logo {
         display: block;
         text-align: left;
+        padding: 16px;
     }
 
     nav .menu-items {
@@ -245,4 +273,7 @@ img.hero {
         margin: auto;
     }
 
+    .des {
+        grid-template-columns: 20% 20% 20% 20%;
+    }
 }
