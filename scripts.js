@@ -8,7 +8,7 @@ $(function () {
   $(function expandSection() {
     $(".show--more").click(function () {
         $(".des").toggleClass("expanded");
-        $(this).text() === 'Show More' ? $(this).text('Show Less') : $(this).text('Show ore')
+        $(this).text() === 'Show More' ? $(this).text('Show Less') : $(this).text('Show More')
       });
   });
 
