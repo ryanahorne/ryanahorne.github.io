@@ -182,12 +182,17 @@ img.hero {
 
 .sec {
     position: relative;
+    max-width: 1280px;
     padding: 16px 0;
-    max-width: 1280px
+
 }
 
-.container {
-    padding: 0 0 0 12px;
+.container.res {
+    padding: 0 0 0 16px;
+}
+
+p.contact {
+    line-height: 1.4;
 }
 
 .des {
@@ -202,10 +207,19 @@ img.hero {
 
 .des.expanded {
     max-height:100%;
+    transition: ease-in 200ms;
 }
 
 .des img {
     max-width: 100%;
+}
+
+.show--more {
+    display: block;
+    margin: 16px 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #00171F;
 }
 
 @media (min-width: 600px) {
