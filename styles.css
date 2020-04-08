@@ -222,7 +222,7 @@ img.hero {
     font-weight: 500;
 }
 
-.container.res {
+.container.res, .container.dev {
     padding: 0 0 0 16px;
 }
 
@@ -327,6 +327,10 @@ footer {
     nav.scrolled a:hover {
         color: #fff;
         transition: color 200ms linear;
+    }
+
+    nav.scrolled a.logo:hover {
+        color: #007EA7;
     }
     
     .ham-menu {
