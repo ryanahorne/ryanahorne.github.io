@@ -55,6 +55,14 @@ img {
     display: inline;
 }
 
+.btn {
+    background-color: #007EA7;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    padding: 12px 48px;
+}
+
 @media (min-width: 1000px) {
     .mobile-only {
         display: none;
@@ -267,6 +275,12 @@ footer {
     margin: 36px 0 0;
     padding: 24px;
     text-align: center;
+}
+
+#responseCorrect,
+#responseFail {
+    display: none;
+    margin-top: 24px;
 }
 
 @media (min-width: 600px) {
