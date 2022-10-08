@@ -22,4 +22,21 @@ $(function () {
     }
   }
 
+  $("#lockCode").keypress(function(event) {
+    if (event.which == 13) {
+        event.preventDefault();
+        $("#codeForm").submit();
+    }
+});
+
+  function killerScript() {
+    if (document.getElementById('lockCode').value == 1463) {
+      document.getElementById("responseCorrect").style.display = "block";
+      document.getElementById("responseFail").style.display = "none";
+    } else {
+      document.getElementById("responseFail").style.display = "block";
+      document.getElementById("responseCorrect").style.display = "none";
+    }
+  }
+
   console.log("Hello potential employers! Thank you for taking the time to dig into my code, I really appreciate it! If your seeing this console log, I assume you are trying to find out if I wrote my own code, or If I am using a framework such as Bootstrap. While I love using Bootstrap and Foundation for sites due to their speed of setup and usability, I chose to write this site from scratch in order to showcase my understanding of the markup and syntax. If you would like to see the source code for this site, you can find it at https://github.com/ryanahorne/ryanahorne.github.io");
