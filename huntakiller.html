@@ -36,15 +36,15 @@
                 <img style=" width:200px; height: auto; margin: 148px auto 24px; display: block;" src="https://res.cloudinary.com/ryan-horne-portfolio/image/upload/v1665191003/f010cc34-c818-4eee-ade7-80d6b86f5d76-1615088347733_juazf0.png" alt="hunt a killer logo">
             </div>
             <h1 style="text-align: center;">Enter The Lockbox Code Below</h1>
-            <div style="max-width: 50%;margin: 24px auto;">
+            <div style="max-width: 100%;margin: 24px auto;display: flex;flex-direction: column;">
                 <form id="codeForm" style="margin: 24px auto;">
-                    <input style="width: 200px; height:30px;" type="text" name="lockCode" id="lockCode">
+                    <input style="width: 100%;height: 48px;font-size: 32px;align-self: center;display: flex;" type="text" name="lockCode" id="lockCode">
                 </form>
                 <button class="btn" type="submit" name="Submit" id="submitCode" onclick="killerScript()">Submit</button>
-                <div id="responseCorrect"><iframe width="560" height="315" src="https://www.youtube.com/embed/J7HIxqDpJ0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="responseCorrect"><iframe width="560" height="315" src="https://www.youtube.com/embed/J7HIxqDpJ0Q" title="YouTube video player" frameborder="0" autoplay="1" controls="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Congrats. You can open the box</p>
                 </div>
-                <div id="responseFail"><iframe width="560" height="315" src="https://www.youtube.com/embed/g_vZasFzMN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="responseFail"><iframe width="560" height="315" src="https://www.youtube.com/embed/g_vZasFzMN4" title="YouTube video player" autoplay="1" controls="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     <p>Try again Homie</p>
                 </div>
             </div>
