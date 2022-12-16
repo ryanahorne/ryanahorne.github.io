@@ -13,6 +13,12 @@
       <body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <nav id="navbar">
+            <style>
+                iframe {
+                    width:100%!important;
+                    height:auto!important;
+                }
+            </style>
             <div class="ham-menu"><a href="javascript:void(0);" onclick="menuOpen()"><i
                   class="material-icons md-48">menu</i></a></div>
             <a  href="#resume" class="logo"><span class="text--blk">RH</span> | <span class="mobile-only"><i class="material-icons">code</i> | <i class="material-icons">brush</i></span><span class="mobile-hide"><span
@@ -41,10 +47,10 @@
                     <input style="width: 100%;height: 48px;font-size: 32px;align-self: center;display: flex;" type="text" name="lockCode" id="lockCode">
                 </form>
                 <button class="btn" type="submit" name="Submit" id="submitCode" onclick="killerScript()">Submit</button>
-                <div id="responseCorrect"><iframe width="560" height="315" src="https://www.youtube.com/embed/J7HIxqDpJ0Q" title="YouTube video player" frameborder="0" autoplay="1" controls="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="responseCorrect"><iframe width="560" height="315" src="https://www.youtube.com/embed/J7HIxqDpJ0Q?&autoplay=1&controls=0" title="YouTube video player" frameborder="0" autoplay="1" controls="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Congrats. You can open the box</p>
                 </div>
-                <div id="responseFail"><iframe width="560" height="315" src="https://www.youtube.com/embed/g_vZasFzMN4" title="YouTube video player" autoplay="1" controls="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <div id="responseFail"><iframe width="560" height="315" src="https://www.youtube.com/embed/g_vZasFzMN4?&autoplay=1&controls=0" title="YouTube video player" autoplay="1" controls="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     <p>Try again Homie</p>
                 </div>
             </div>
